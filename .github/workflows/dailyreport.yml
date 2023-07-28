@@ -1,0 +1,13 @@
+name: daily Report
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  send_email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first-step
+        run: echo "Hello World"
