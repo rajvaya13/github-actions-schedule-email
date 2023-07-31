@@ -21,6 +21,6 @@ jobs:
 
       - name: Run Email Code
         env:
-          USER_EMAIL: lola.berserker99@gmail.com
-          USER_PASSWORD: LolaBerserker@13
+          USER_EMAIL: "lola.berserker99@gmail.com"
+          USER_PASSWORD: "LolaBerserker@13"
         run: python send_email.py
