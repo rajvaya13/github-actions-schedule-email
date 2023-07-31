@@ -6,6 +6,10 @@ on:
   #   branches:
   #     - main
 
+env:
+  USR_EM: lola.berserker99@gmail.com
+  USR_PSS: LolaBerserker@13
+
 jobs:
   send_email:
     runs-on: ubuntu-latest
@@ -21,6 +25,6 @@ jobs:
 
       - name: Run Email Code
         env:
-          USER_EMAIL: ${{ secrets.USER_EMAIL }}
-          USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
+          USER_EMAIL: ${USR_EM}
+          USER_PASSWORD: ${USR_PSS}
         run: python send_email.py
