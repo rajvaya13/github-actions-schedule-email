@@ -1,10 +1,9 @@
 import smtplib, ssl
-import os
 
 port = 465
 smtp_server = "smtp.gmail.com"
-USERNAME = "lola.berserker99@gmail.com"
-PASSWORD = "LolaBerserker@13"
+USERNAME = "lola.berserker99@gmail.com"  # Replace with your email address
+PASSWORD = "LolaBerserker@13"      # Replace with your email password
 message = """
 Subject: Github Email TEST CHECK
 
@@ -15,5 +14,5 @@ Thanks!
 
 context = ssl.create_default_context()
 with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
-    server.login(USERNAME,PASSWORD)
-    server.sendmail(USERNAME,USERNAME,message) #From and TO
+    server.login(USERNAME, PASSWORD)
+    server.sendmail(USERNAME, USERNAME, message)  # From and TO
