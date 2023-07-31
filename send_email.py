@@ -3,7 +3,7 @@ import os
 
 port = 465
 smtp_server = "smtp.gmail.com"
-USERNAME = "lola.berserker@gmail.com"
+USERNAME = "lola.berserker99@gmail.com"
 PASSWORD = "LolaBerserker@13"
 message = """
 Subject: Github Email TEST CHECK
