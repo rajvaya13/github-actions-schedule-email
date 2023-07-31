@@ -1,8 +1,8 @@
 import smtplib, ssl
 import os
 
-port = 465
-smtp_server = "smtp.gmail.com"
+port = 587
+smtp_server = "smtp.office365.com"
 USERNAME = os.environ.get('USER_EMAIL')
 PASSWORD = os.environ.get('USER_PASSWORD')
 message = """
