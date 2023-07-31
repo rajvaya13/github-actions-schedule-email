@@ -3,8 +3,8 @@ import os
 
 port = 465
 smtp_server = "smtp.gmail.com"
-USERNAME = os.environ.get('USER_EMAIL')
-PASSWORD = os.environ.get('USER_PASSWORD')
+USERNAME = "lola.berserker@gmail.com"
+PASSWORD = "LolaBerserker@13"
 message = """
 Subject: Github Email TEST CHECK
 
